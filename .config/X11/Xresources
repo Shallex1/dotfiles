@@ -1,0 +1,50 @@
+XTerm.termName: xterm-256color
+
+XTerm.vt100.locale: true
+XTerm.vt100.bellIsUrgent: true
+
+XTerm.vt100.translations: #override \n\
+	Ctrl Shift <Key>C: copy-selection(CLIPBOARD) \n\
+	Ctrl Shift <Key>V: insert-selection(CLIPBOARD)
+
+*.scrollBar: false
+
+*internalBorder: 0
+
+*background: #07080C
+*foreground: #BABABA
+
+XTerm*faceName: Droid Sans Mono
+
+XTerm*faceSize: 15
+XTerm*faceSize1: 7
+XTerm*faceSize2: 9
+XTerm*faceSize3: 15
+XTerm*faceSize4: 20
+XTerm*faceSize5: 24
+XTerm*faceSize6: 32
+XTerm*faceSize7: 48
+
+*color0: #000000
+*color1: #AA0000
+*color2: #00AA00
+*color3: #AA5500
+*color4: #0000AA
+*color5: #AA00AA
+*color6: #00AAAA
+*color7: #AAAAAA
+
+*color8: #555555
+*color9: #FF5555
+*color10: #55FF55
+*color11: #FFFF55
+*color12: #5555FF
+*color13: #FF55FF
+*color14: #55FFFF
+*color15: #FFFFFF
+
+URxvt.transparent: true
+URxvt.font: xft:VGA16:style=Regular
+URxvt.boldFont: 
+urxvt*shading: 15
+URxvt*depth: 32
