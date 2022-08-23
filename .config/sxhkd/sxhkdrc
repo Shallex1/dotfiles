@@ -1,0 +1,66 @@
+super + Return
+	xterm -bw 0
+
+super + alt + Return
+	urxvt
+
+super + space
+	dmenu_run -fn VGA16
+
+super + KP_Next
+	firefoxxdg
+
+super + alt + KP_Next
+	firefoxxdg --private-window
+
+super + shift + KP_Next
+	killall SIGUSR1 firefox
+
+super + KP_Delete
+	steamxdg
+
+super + m
+	musicmenu.sh
+
+super + Print
+	setmonitors.sh
+
+super + shift + Print
+	clip.sh
+
+Print
+	flameshot gui
+
+#bspwm
+
+# make sxhkd reload its configuration files:
+super + Escape
+	pkill -USR1 -x sxhkd
+
+super + {h,j,k,l}
+	bspc node -f {west,south,north,east}
+
+super + {Left,Down,Up,Right}
+	bspc node -f {west,south,north,east}
+
+super + {_,shift + }{h,j,k,l}
+	bspc node -{f,s} {west,south,north,east}
+
+super + alt + {h,j,k,l}
+	bspc node -z {left -20 0,bottom 0 20,top 0 -20, right 20 0}
+
+super + {_,shift + }{1-9,0}
+	bspc {desktop -f,node -d} '^{1-9,10}'
+
+super + ctrl + c
+	bspc node -c
+
+# alternate between the tiled and monocle layout
+super + f
+	bspc desktop -l next
+
+
+#music
+
+XF86AudioPlay
+	cmus-remote --pause

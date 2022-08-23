@@ -1,0 +1,5 @@
+set number
+syntax on
+set t_Co=16
+
+set viminfofile=$XDG_STATE_HOME/vim/viminfo

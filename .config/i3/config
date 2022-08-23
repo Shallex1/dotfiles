@@ -8,8 +8,6 @@ exec --no-startup-id nm-applet
 
 # custom execs
 exec --no-startup-id sxhkd
-exec --no-startup-id setmonitors.sh
-exec_always --no-startup-id $XDG_CONFIG_HOME/polybar/launch.sh
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
@@ -168,5 +166,7 @@ assign [class="Qemu-system-x86_64"] 7
 assign [class="steam_app_211600"] 9
 assign [class="thief.exe"] 9
 assign [class="THIEF.EXE"] 9
+assign [class="thief2.exe"] 9
+assign [class="THIEF2.EXE"] 9
 assign [class="Steam"] 10
 assign [class="steam.exe"] 10

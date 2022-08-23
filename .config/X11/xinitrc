@@ -1,5 +1,8 @@
 [[ -f $XDG_CONFIG_HOME/X11/Xresources ]] && xrdb -merge -I$HOME $XDG_CONFIG_HOME/X11/Xresources
 
-feh --no-fehbg --bg-fill ~/media/images/wallpapers/.default
 
-exec i3 
+feh --no-fehbg --bg-fill ~/media/images/wallpapers/.default &
+sxhkd &
+$XDG_CONFIG_HOME/polybar/launch.sh & 
+
+exec bspwm 
