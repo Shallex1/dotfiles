@@ -1,0 +1,7 @@
+alias ls='ls -lhgG --color=auto --group-directories-first'
+alias la='ls -A'
+alias lc='\ls -AhG --color=auto --group-directories-first'
+alias lwc='la | wc -l'
+alias du='du -h'
+alias free='free -h'
+alias dosbox='dosbox -conf $XDG_CONFIG_HOME/dosbox/dosbox-0.74-3.conf'
